@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script src="./validateForm.js" defer></script>
+    <title>Ping. | Frontend Mentor Challenge</title>
+  </head>
+  <body class="font-light">
+    <div class="grid min-h-[100dvh] grid-rows-[1fr_auto] gap-4 px-4 pb-8 pt-20">
+      <main class="flex flex-col items-center">
+        <img
+          class="mb-8 w-14 lg:mb-10 lg:w-24"
+          src="./images/logo.svg"
+          alt="Ping" />
+        <h1 class="mb-4 text-[1.375rem] text-gray sm:text-2xl lg:text-5xl">
+          We are launching <strong class="font-bold text-black">soon!</strong>
+        </h1>
+        <p class="mb-8 text-xs sm:text-sm lg:mb-10 lg:text-xl">
+          Subscribe and get notified.
+        </p>
+        <form
+          novalidate
+          class="mb-10 flex w-72 flex-col gap-[.625rem] lg:mb-16 lg:w-[640px] lg:flex-row lg:items-start lg:gap-4">
+          <div class="flex flex-col items-center justify-start gap-2 lg:w-2/3">
+            <input
+              required
+              class="peer block w-full rounded-full border border-blue-200 px-8 py-3 text-xs placeholder:text-xs placeholder:text-gray sm:text-sm placeholder:sm:text-sm lg:py-4"
+              type="email"
+              name="email-address"
+              id="email-address"
+              aria-describedby="email-error-msg"
+              placeholder="Your email address..." />
+            <p id="email-error-msg" class="mb-3 hidden text-xs italic text-red">
+              Please provide a valid email address
+            </p>
+          </div>
+          <button
+            id="submit-button"
+            class="flex items-center justify-center rounded-full bg-blue-400 py-3 text-xs font-semibold text-white shadow-lg shadow-blue-400/40 transition disabled:bg-gray disabled:shadow-gray/25 sm:text-sm lg:w-1/3 lg:py-4 hover:[&:not(:disabled)]:opacity-90">
+            Notify Me
+          </button>
+        </form>
+        <img
+          class="w-full max-w-md lg:max-w-2xl"
+          src="./images/illustration-dashboard.png"
+          alt="statistical dashboard illustration" />
+      </main>
+      <footer class="flex flex-col items-center">
+        <ul class="mb-7 flex gap-4" role="list">
+          <li class="social-link-container group">
+            <a
+              class="flex h-full w-full items-center justify-center rounded-full"
+              href="https://facebook.com">
+              <span class="sr-only">Facebook</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 fill-blue-400 stroke-none transition group-hover:fill-blue-100"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-link-container group">
+            <a
+              class="flex h-full w-full items-center justify-center rounded-full"
+              href="https://twitter.com">
+              <span class="sr-only">Twitter</span>
+              <svg
+                class="h-5 w-5 fill-blue-400 stroke-none transition group-hover:fill-blue-100"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-link-container group">
+            <a
+              class="flex h-full w-full items-center justify-center rounded-full"
+              href="https://instagram.com">
+              <span class="sr-only">Instagram</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 fill-none stroke-blue-400 transition group-hover:stroke-blue-100"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="text-xs text-gray sm:text-sm">
+          © Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
